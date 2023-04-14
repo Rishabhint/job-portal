@@ -7,7 +7,8 @@ export default {
     {
       name: 'username',
       title: 'Username',
-      type: 'string',
+      type: 'reference',
+      to: [{type: 'jobApplicant'}],
       validation: (Rule) => Rule.required(),
     },
     {

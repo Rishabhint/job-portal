@@ -6,6 +6,13 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'personHiring',
+      title: 'Person Hiring',
+      type: 'reference',
+      to: [{type: 'recruiter'}],
+      validation: (Rule) => Rule.required(),
+    },
+    {
       name: 'jobTitle',
       title: 'Job Title',
       type: 'string',

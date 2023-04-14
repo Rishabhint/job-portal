@@ -8,7 +8,8 @@ export default {
     {
       name: 'fullName',
       title: 'Full Name',
-      type: 'string',
+      type: 'reference',
+      to: [{type: 'user'}],
       validation: (Rule) => Rule.required(),
     },
     {
